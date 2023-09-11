@@ -1,0 +1,68 @@
+<div class="contact">
+  <h1 class="mt-5">CONATCT SECTION</h1>
+  <div class="line d-flex justify-content-center align-items-center">
+    <span></span>
+    <i class="fa-solid fa-star mx-3"></i>
+    <span></span>
+  </div>
+  <div class="input-box">
+    <label
+      for="userName"
+      class="position-relative top-0"
+      [class.goTop]="!User_Name.length"
+      >User Name :</label
+    >
+    <input
+      [(ngModel)]="User_Name"
+      id="userName"
+      type="text"
+      class="form-control"
+      placeholder="User Name"
+    />
+
+    <label
+      for="userAge"
+      class="position-relative top-0"
+      [class.goTop]="!User_Age.length"
+    >
+      User Age :</label
+    >
+    <input
+      [(ngModel)]="User_Age"
+      id="userAge"
+      type="text"
+      placeholder="User Age"
+      class="form-control"
+    />
+
+    <label
+      for="userEmail"
+      class="position-relative top-0"
+      [class.goTop]="!User_Email.length"
+      >User Email :</label
+    >
+    <input
+      [(ngModel)]="User_Email"
+      id="userEmail"
+      type="email"
+      placeholder="User Email"
+      class="form-control"
+    />
+
+    <label
+      for="userPassword"
+      class="position-relative top-0"
+      [class.goTop]="!User_Password.length"
+      >User Password :</label
+    >
+    <input
+      [(ngModel)]="User_Password"
+      id="userPassword"
+      type="password"
+      placeholder="User Password"
+      class="form-control mb-5"
+    />
+
+    <button class="btn">Send Message</button>
+  </div>
+</div>

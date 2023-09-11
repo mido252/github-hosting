@@ -1,0 +1,37 @@
+img {
+  width: 250px;
+}
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  height: 100vh;
+  background-color: #1abc9c;
+}
+.line {
+  width: 380px;
+  margin-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line span {
+  background-color: #fff;
+  width: 100px;
+  height: 2px;
+}
+/* h1 {
+  position: relative;
+  font-size: 3em;
+  letter-spacing: 0.05em;
+}
+h1 span {
+  color: #555;
+  transition: 0.25s;
+}
+h1:hover span {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 3px #0f0;
+} */

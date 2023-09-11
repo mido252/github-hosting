@@ -1,0 +1,21 @@
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: #1abc9c;
+  height: 100vh;
+}
+.line {
+  width: 380px;
+  margin-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line span {
+  background-color: #fff;
+  width: 100px;
+  height: 2px;
+}

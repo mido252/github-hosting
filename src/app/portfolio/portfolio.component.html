@@ -1,0 +1,30 @@
+<div class="portfolio">
+  <h1>PORTFOLIO COMPONENT</h1>
+  <div class="line d-flex justify-content-center align-items-center">
+    <span></span>
+    <i class="fa-solid fa-star mx-3"></i>
+    <span></span>
+  </div>
+  <div class="container pt-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4">
+      <div *ngFor="let img of imgSrcs" class="col">
+        <div class="col-content">
+          <div class="img-box">
+            <img [src]="img" alt="" class="rounded-4" />
+            <div class="layer rounded-4" (click)="display = false; imgs = img">
+              <i class="fa-solid fa-plus text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="display-img position-fixed start-0 w-100 top-0 h-100 d-flex align-items-center justify-content-center"
+    [class.d-none]="display"
+    (click)="display = true"
+  >
+    <img [src]="imgs" alt="" class="layer-img" />
+  </div>
+</div>
